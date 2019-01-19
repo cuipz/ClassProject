@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/mian/mian",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/order/order",
+    "pages/mine/mine"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "教室预约",
+    "navigationBarTextStyle": "black"
+  }
+}

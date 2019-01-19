@@ -1,0 +1,37 @@
+<!--pages/mian/mian.wxml-->
+<view class="section">
+  <view class="section__title">选择日期：</view>
+  <picker mode="date" value="{{date}}" start="2019-01-01" end="2019-01-20" bindchange="bindDateChange">
+    <view class="picker">
+      {{date}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">选择时间段：</view>
+  <picker bindchange="bindTimeChange" value="{{timeIndex}}" range="{{time}}">
+    <view class="picker">
+      {{time[timeIndex]}}
+    </view>
+  </picker>
+</view>
+<view class="section">
+  <view class="section__title">选择位置：</view>
+  <picker bindchange="bindAddrChange" value="{{addrIndex}}" range="{{addr}}">
+    <view class="picker">
+      {{addr[addrIndex]}}
+    </view>
+  </picker>
+</view>
+<button class="section search" bindtap='bindSearch'>搜索</button>
+<view class='section fenjie'></view>
+<view class='section'>
+  <view class="room"><!--wx:for="{{room}}" wx:for-index="i" wx:for-item="item"-->
+    <view catchtap="gotoresult" class="room-addr">{{id}}</view>
+    <view class="room-state">{{state}}</view>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='want'>我要预约</view>
+  <view class='mine' bindtap='bindMine'>我的预约</view>
+</view>

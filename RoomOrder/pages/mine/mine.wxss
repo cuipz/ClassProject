@@ -1,0 +1,65 @@
+/* pages/mine/mine.wxss */
+.section.information{
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+}
+.information{
+  width: 90%;
+  margin-top: 5%;
+  margin-left: 5%;
+  border: 2rpx solid rgb(12, 12, 12);
+  opacity: 0.8;
+  background-color: rgba(96, 173, 245, 0.815);
+}
+.dateTime{
+  font-size: 40rpx;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 15rpx;
+}
+.else{
+  margin-bottom: 15rpx;
+  font-size: 40rpx;
+  width: 90%;
+  margin-left: 5%;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+.room{
+  text-align: left;
+}
+.permissonState{
+  text-align: right;
+}
+.fenjie{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  margin-left: 5%;
+  height: 2rpx;
+  width: 90%;
+  border-bottom: 2rpx solid rgba(0, 0, 0, 0.904);
+}
+.bottom{
+  height: 5%;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  text-align: center;
+}
+.mine{
+  width: 50%;
+  font-size: 40rpx;
+  background-color: rgb(173, 230, 140);
+}
+.want{
+  width: 50%;
+  font-size: 40rpx;
+  background-color: rgb(184, 185, 184);
+}

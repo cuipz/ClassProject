@@ -1,0 +1,42 @@
+<!--pages/order/order.wxml-->
+<view class="section">
+  <view class="section__title">日期：</view>
+  <view class="picker">
+    {{date}}
+  </view>
+</view>
+<view class="section">
+  <view class="section__title">时间段：</view>
+  <view class="picker">
+    {{time}}
+  </view>
+</view>
+<view class="section">
+  <view class="section__title">位置：</view>
+    <view class="picker">
+      {{addr}}
+    </view>
+</view>
+<view class="section">
+  <view class="section__title">教室：</view>
+    <view class="picker">
+      {{room}}
+    </view>
+</view>
+<view class='section'>
+  <view class="section__title">申请人姓名：</view>
+  <input type='text' class='input' bindinput="nameInput"></input>
+</view>
+<view class='section'>
+  <view class="section__title">申请人学号：</view>
+  <input type='number' class='input' bindinput="idInput"></input>
+</view>
+<view class='section'>
+  <view class="section__title">联系方式：</view>
+  <input type='number' class='input' bindinput="phoneInput"></input>
+</view>
+<button class='section submit' bindtap='bindSubmit'>提交</button>
+<view class='bottom'>
+  <view class='want' bindtap='bindWant'>我要预约</view>
+  <view class='mine' bindtap='bindMine'>我的预约</view>
+</view>

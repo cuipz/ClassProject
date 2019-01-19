@@ -1,0 +1,15 @@
+<!--pages/mine/mine.wxml-->
+<view class='section'>
+  <view class="information"><!--wx:for="{{room}}" wx:for-index="i" wx:for-item="item"-->
+    <view class="dateTime">{{date}}  {{time}}</view>
+    <view class='fenjie'></view>
+    <view class='else'>
+      <view class="room">{{addr}}  {{room}}</view>
+      <view class='permissonState'>申请状态：{{permissonState}}</view>
+    </view>
+  </view>
+</view>
+<view class='bottom'>
+  <view class='want' bindtap='bindWant'>我要预约</view>
+  <view class='mine'>我的预约</view>
+</view>
